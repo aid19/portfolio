@@ -352,6 +352,38 @@ a {
     animation: popDown 0.5s;
   }
 
+
+  /* HEADER MENU BTN START */
+
+  .mdi-menu .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #f5f5f5;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  nav .mdi-menu {
+    font-size: 30pt;
+    line-height: 36pt;
+    margin: auto 0;
+    position: absolute;
+    right: 5vw;
+  }
+
+  .close-btn .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-10px, 5px);
+    transform: rotate(-45deg) translate(-10px, 6px);
+  }
+
+  .close-btn .bar2 {
+    opacity: 0;
+  }
+
+  .close-btn .bar3 {
+    -webkit-transform: rotate(45deg) translate(-10px, 5px);
+    transform: rotate(45deg) translate(-10px, -6px);
+  }
   nav .link-wrap {
     background: #281b45c5;
     height: 0;
@@ -383,18 +415,12 @@ a {
     color: #e31b6d;
   }
 
-  nav .mdi-menu {
-    font-size: 30pt;
-    line-height: 36pt;
-    margin: auto 0;
-    position: absolute;
-    right: 5vw;
-    /* top: 0; */
-  }
-
   nav .active {
     color: #e31b6d;
   }
+
+  /* HEADER MENU BTN END */
+
 
   .carousel-wrap {
     height: 250px;
@@ -765,20 +791,23 @@ a {
     z-index: 1;
   }
 
-  /* section:nth-of-type(3) {
+  /* section:nth-of-type(4) {
     background: #f5f5f5;
   } */
-
-  section:nth-of-type(3) .container {
+  section:nth-of-type() .container {
     padding: 0;
   }
 
-  section:nth-of-type(3) .filter-wrap {
+  section:nth-of-type(4) .container {
+    padding: 0;
+  }
+
+  section:nth-of-type(4) .filter-wrap {
     position: relative;
     white-space: nowrap;
   }
 
-  section:nth-of-type(3) .filter {
+  section:nth-of-type(4) .filter {
     cursor: pointer;
     font-size: 6pt;
     font-weight: 600;
@@ -786,7 +815,7 @@ a {
     transition: background-color 0.5s;
   }
 
-  section:nth-of-type(3) .float-bar {
+  section:nth-of-type(4) .float-bar {
     bottom: 0;
     left: 30px;
     position: absolute;
@@ -800,7 +829,7 @@ a {
     transition: all 0.5s ease-in-out;
   }
 
-  section:nth-of-type(3) .float-bar .row {
+  section:nth-of-type(4) .float-bar .row {
     bottom: 0;
     left: -30px;
     position: absolute;
@@ -809,23 +838,23 @@ a {
     transition: left 0.5s ease-in-out;
   }
 
-  section:nth-of-type(3) .float-bar .row .filter {
+  section:nth-of-type(4) .float-bar .row .filter {
     color: #fff;
   }
 
-  section:nth-of-type(3) .text {
+  section:nth-of-type(4) .text {
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
   }
 
-  section:nth-of-type(3) #gallery {
+  section:nth-of-type(4) #gallery {
     margin: 20px 0;
   }
 
-  section:nth-of-type(3) #gallery .text,
-  section:nth-of-type(3) #gallery .button {
+  section:nth-of-type(4) #gallery .text,
+  section:nth-of-type(4) #gallery .button {
     color: #1b242f;
     opacity: 0;
     text-align: center;
@@ -833,12 +862,12 @@ a {
     z-index: 2;
   }
 
-  section:nth-of-type(3) #gallery .text .bold,
-  section:nth-of-type(3) #gallery .button .bold {
+  section:nth-of-type(4) #gallery .text .bold,
+  section:nth-of-type(4) #gallery .button .bold {
     font-size: 16pt;
   }
 
-  section:nth-of-type(3) #gallery .button {
+  section:nth-of-type(4) #gallery .button {
     bottom: 0;
     left: 0;
     position: absolute;
@@ -850,86 +879,86 @@ a {
     width: 170px;
   }
 
-  section:nth-of-type(3) #gallery .mix {
+  section:nth-of-type(4) #gallery .mix {
     display: none;
     position: relative;
   }
 
-  section:nth-of-type(3) #gallery .mix .waypoint {
+  section:nth-of-type(4) #gallery .mix .waypoint {
     background: #fff;
   }
 
-  section:nth-of-type(3) #gallery .mix .button:hover {
+  section:nth-of-type(4) #gallery .mix .button:hover {
     background: #e31b6d;
     color: #fff;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(1) .card {
     background: url("../img/thumb-1.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(2) .card {
     background: url("../img/thumb-2.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(3) .card {
     background: url("../img/thumb-3.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(4) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(4) .card {
     background: url("../img/thumb-4.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(5) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(5) .card {
     background: url("../img/thumb-5.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(6) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(6) .card {
     background: url("../img/thumb-6.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(7) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(7) .card {
     background: url("../img/thumb-7.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(8) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(8) .card {
     background: url("../img/thumb-8.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(9) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(9) .card {
     background: url("../img/thumb-9.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(10) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(10) .card {
     background: url("../img/thumb-10.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(11) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(11) .card {
     background: url("../img/thumb-11.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix:nth-child(12) .card {
+  section:nth-of-type(4) #gallery .mix:nth-child(12) .card {
     background: url("../img/thumb-12.jpg") center center/cover;
   }
 
-  section:nth-of-type(3) #gallery .mix .card {
+  section:nth-of-type(4) #gallery .mix .card {
     height: 240px;
     max-width: 100%;
     transition: opacity 0.5s;
     width: calc(50vw - 8px);
   }
 
-  section:nth-of-type(3) #gallery .mix:hover .card {
+  section:nth-of-type(4) #gallery .mix:hover .card {
     opacity: 0;
   }
 
-  section:nth-of-type(3) #gallery .mix:hover .text {
+  section:nth-of-type(4) #gallery .mix:hover .text {
     cursor: default;
     opacity: 1;
     top: 24%;
   }
 
-  section:nth-of-type(3) #gallery .mix:hover .button {
+  section:nth-of-type(4) #gallery .mix:hover .button {
     bottom: 24%;
     opacity: 1;
   }
@@ -1021,41 +1050,41 @@ a {
     max-height: 85px;
   } */
 
-  section:nth-of-type(4) {
+  section:nth-of-type(5) {
     background: #252934;
     color: #fff;
     padding-top: 175px;
   }
 
-  section:nth-of-type(4) .header {
+  section:nth-of-type(5) .header {
     color: #fff;
   }
 
-  section:nth-of-type(4) .header-bar {
+  section:nth-of-type(5) .header-bar {
     background: #fff;
     margin: 25px 0 40px 0;
     width: 110px;
   }
 
-  section:nth-of-type(4) .highlight {
+  section:nth-of-type(5) .highlight {
     color: #1f53e2;
     font-weight: 600;
   }
 
-  section:nth-of-type(4) svg {
+  section:nth-of-type(5) svg {
     left: 0;
     position: absolute;
     top: 0;
   }
 
-  section:nth-of-type(4) form {
+  section:nth-of-type(5) form {
     margin: 40px auto 0 auto;
     min-width: 95%;
   }
 
-  section:nth-of-type(4) input[type=text],
-  section:nth-of-type(4) input[type=email],
-  section:nth-of-type(4) textarea {
+  section:nth-of-type(5) input[type=text],
+  section:nth-of-type(5) input[type=email],
+  section:nth-of-type(5) textarea {
     background: #1e242c;
     border: 0;
     box-sizing: border-box;
@@ -1068,12 +1097,12 @@ a {
     width: 100%;
   }
 
-  section:nth-of-type(4) textarea {
+  section:nth-of-type(5) textarea {
     margin-bottom: 5px;
     min-height: 150px;
   }
 
-  section:nth-of-type(4) .button {
+  section:nth-of-type(5) .button {
     background: transparent;
     color: #fff;
     float: right;
@@ -1083,11 +1112,11 @@ a {
     padding: 10px 30px;
   }
 
-  section:nth-of-type(4) .button:hover {
+  section:nth-of-type(5) .button:hover {
     background: #1f53e2;
   }
 
-  section:nth-of-type(4) #success {
+  section:nth-of-type(5) #success {
     height: 0;
     overflow: hidden;
     position: relative;
@@ -1095,11 +1124,11 @@ a {
     width: 100%;
   }
 
-  section:nth-of-type(4) #success.expand {
+  section:nth-of-type(5) #success.expand {
     height: 36px;
   }
 
-  section:nth-of-type(4) #success div {
+  section:nth-of-type(5) #success div {
     background: #04c986;
     border: 1px solid #157c59;
     color: #157051;
@@ -1108,7 +1137,7 @@ a {
     padding: 5px 0;
   }
 
-  section:nth-of-type(4) #close {
+  section:nth-of-type(5) #close {
     cursor: pointer;
     font-size: 12pt;
     font-weight: 600;
@@ -1193,7 +1222,7 @@ a {
   }
 
   @media screen and (max-width: 400px) {
-    section:nth-of-type(3) #gallery .mix .card {
+    section:nth-of-type(4) #gallery .mix .card {
       width: 100vw;
     }
   }
@@ -1354,17 +1383,17 @@ a {
       font-size: 40pt;
     }
 
-    section:nth-of-type(3) .filter {
+    section:nth-of-type(4) .filter {
       font-size: 11pt;
       margin: 0 15px;
       padding: 0 30px;
     }
 
-    section:nth-of-type(3) .float-bar {
+    section:nth-of-type(4) .float-bar {
       height: 30px;
     }
 
-    section:nth-of-type(3) #gallery .mix .card {
+    section:nth-of-type(4) #gallery .mix .card {
       height: 300px;
     }
 
@@ -1528,11 +1557,11 @@ a {
       padding: 0 10px;
     }
 
-    section:nth-of-type(3) #gallery .mix .card {
+    section:nth-of-type(4) #gallery .mix .card {
       width: 390px;
     }
 
-    section:nth-of-type(3) .filter {
+    section:nth-of-type(4) .filter {
       font-size: 13pt;
       margin: 0 25px;
       padding: 0 40px;
