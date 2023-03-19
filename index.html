@@ -5,123 +5,89 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
+
     <!-- HOSTED -->
-    <link33
+    <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
       rel="stylesheet"
       type="text/css"
     />
-  
+    <link
+      href="style/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+
     <!-- LOCAL -->
     <link rel="stylesheet" href="style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <!-- HOSTED -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" /> -->
+
     <!-- LOCAL -->
     <script src="scripts/pt.min.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/modal.js"></script>
 
     <script src="https://kit.fontawesome.com/6fa08c57cd.js" crossorigin="anonymous"></script>
-    
+
   </head>
   <body>
-    <style>
-   
-      .fill {
-        box-sizing: content-box;
-        border-radius: 0 40px 40px 0;
-        /* padding: 10px; */
-        box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-      }
-      /* .fill > span {
-        display: block;
-        height: 100%;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        background-color: rgb(43, 194, 83);
-        background-image: linear-gradient(
-          center bottom,
-          rgb(43, 194, 83) 37%,
-          rgb(84, 240, 84) 69%
-        );
-        box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
-          inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-        position: relative;
-        overflow: hidden;
-      } */
-      .fill > span:after  {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-image: linear-gradient(
-          -45deg,
-          rgba(255, 255, 255, 0.2) 25%,
-          transparent 25%,
-          transparent 50%,
-          rgba(255, 255, 255, 0.2) 50%,
-          rgba(255, 255, 255, 0.2) 75%,
-          transparent 75%,
-          transparent
-        );
-        z-index: 1;
-        background-size: 50px 50px;
-        animation: move 2s linear infinite;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-        overflow: hidden;
-      }
-      .animate > span:after {
-        display: none;
-      }
-
-      @keyframes move {
-        0% {
-          background-position: 0 0;
-        }
-        100% {
-          background-position: 50px 50px;
-        }
-      }
-      
-    </style>
-
-      <!-- HEADER -->
     <div class="overflow-wrap">
+      <!-- HOME -->
+      <!-- <div class="modal-wrap flex">
+        <div class="mask"></div>
+        <div class="modal" id="modal">
+          <div class="carousel-wrap">
+            <div class="window">
+              <div id="carousel">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+              </div>
+              <i class="mdi mdi-chevron-left" id="prev"></i>
+              <i class="mdi mdi-chevron-right" id="next"></i>
+            </div>
+          </div>
+          <div class="info-box">
+            <div class="title"></div>
+            <div class="tag"></div>
+            <div class="detail"></div>
+            <a href="#" target="_blank">
+              <div class="button">
+                <i class="mdi mdi-open-in-new"></i>VIEW SITE
+              </div>
+            </a>
+          </div>
+          <i class="close mdi mdi-close"></i>
+        </div>
+      </div> -->
+
       <section id="home" class="flex height-fix">
         <div id="pt" class="canvas"></div>
         <div class="flex">
-          <div class="text">Hi there! I'm <span class="highlight">Aida Ismayilova</span>
+          <div class="text">Hello, I'm<span class="highlight">Aida Ismayilova</span>.
             <br />
-            Front-end Developer.
+            I'm a Front-end Developer.
           </div>
 
-          <div class="button page-link" dest="portfolio">My projects</div>
+          <div class="button page-link" dest="about"> View my work <i class="mdi mdi-arrow-right"></i></div>
 
           <nav class="flex">
             <div class="link-wrap">
               <div class="active page-link" dest="home">home</div>
               <div class="page-link" dest="about">about</div>
-              <div class="page-link" dest="skills">skills</div>
-              <div class="page-link" dest="portfolio">projects</div>
+              <div class="page-link" dest="portfolio">portfolio</div>
+              <!-- <div class="page-link" dest="blog">blog</div> -->
               <div class="page-link" dest="contact">contact</div>
             </div>
-            <div class="mdi-menu">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
+            <svg class="mdi mdi-menu" style="width: 34px; height: 34px" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+            </svg>
           </nav>
         </div>
       </section>
@@ -130,12 +96,83 @@
       <section id="about">
         <div class="container flex">
           <h2 class="numbered-heading waypoint" data-animation="slide-in-right">ABOUT</h2>
-          <!-- <div class="header waypoint" data-animation="slide-in-left">ABOUT</div> -->
+          <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
           <!-- <div
             class="header-bar waypoint"
             data-animation="slide-in-left"
             data-delay=".5s"
           ></div> -->
+          <div class="flex row label-wrap">
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap">
+                <div class="hex-wrap waypoint" data-animation="flip-in-x">
+                  <div class="hexagon">
+                    <!-- <img src="img/burger.png" alt=""> -->
+                    <i class="mdi mdi-speedometer"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in">
+                  <div class="label bold">Fast</div>
+                  <div>
+                    Fast load times and lag free interaction, my highest
+                    priority.
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex bullet-wrap">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".2s"
+                >
+                  <div class="hexagon">
+                    <i class="mdi mdi-cellphone-link"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".2s">
+                  <div class="label bold">Responsive</div>
+                  <div>My layouts will work on any device, big or small.</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".4s"
+                >
+                  <div class="hexagon">
+                    <i class="mdi mdi-lightbulb-outline"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".4s">
+                  <div class="label bold">Intuitive</div>
+                  <div>Strong preference for easy to use, intuitive UX/UI.</div>
+                </div>
+              </div>
+
+              <div class="flex bullet-wrap">
+                <div
+                  class="hex-wrap waypoint"
+                  data-animation="flip-in-x"
+                  data-delay=".6s"
+                >
+                  <div class="hexagon">
+                    <i class="mdi mdi-rocket"></i>
+                  </div>
+                </div>
+                <div class="waypoint" data-animation="fade-in" data-delay=".6s">
+                  <div class="label bold">Dynamic</div>
+                  <div>
+                    Websites don't have to be static, I love making pages come
+                    to life.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div class="skills-wrapper flex row-gt-sm">
             <div
@@ -144,14 +181,23 @@
             >
               <img src="img/me.png" class="me" />
               <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
-              <div class="label bold">Who I'am?</div>
+              <div class="label bold">Who's this guy?</div>
               <div>
-                I'm a Front-End Developer for in Azerbaijan,Baku.
+                I'm a Front-End Developer for
+                <a
+                  class="highlight"
+                  href="http://www.chownow.com"
+                  target="_blank"
+                  >ChowNow</a
+                >
+                in Los Angeles, CA.
                 <br />
                 I have serious passion for UI effects, animations and creating
                 intuitive, dynamic user experiences.
                 <br />
-                <span class="page-link highlight" dest="contact">Let's make something special.</span>
+                <span class="page-link highlight" dest="contact"
+                  >Let's make something special.</span
+                >
               </div>
             </div>
 
@@ -159,216 +205,215 @@
               class="flex flex-50-gt-sm waypoint bars-wrap"
               data-animation="slide-in-right"
             >
-              <!-- <div class="flexx">Css
-                <div class="meter">
-                  <span style="width:90%"></span>
-                </div>
-              </div> -->
-          
-        
-              <!-- <pre><code>&lt;div class=&quot;meter animate&quot;&gt;
-              &lt;span style=&quot;width: 50%&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;
-              &lt;/div&gt;</code></pre> -->
-         
               <div class="bar flex">
-                <div class="bar fill" style="width: 90%"><span></span>
+                <div class="bar fill" style="width: 90%">
                   <div class="tag bold flex">CSS</div>
                 </div>
                 <span>90%</span>
               </div>
 
               <div class="bar flex">
-                <div class="bar fill" style="width: 90%"><span></span>
+                <div class="bar fill" style="width: 90%">
                   <div class="tag bold flex">HTML</div>
                 </div>
                 <span>90%</span>
               </div>
 
               <div class="bar flex">
-                <div class="bar fill" style="width: 80%"><span></span>
+                <div class="bar fill" style="width: 80%">
+                  <div class="tag bold flex">React</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width: 80%">
                   <div class="tag bold flex">JavaScript</div>
                 </div>
                 <span>80%</span>
               </div>
 
               <div class="bar flex">
-                <div class="bar fill" style="width: 60%"><span></span>
-                  <div class="tag bold flex">React</div>
-                </div>
-                <span>60%</span>
-              </div>
-
-              <div class="bar flex">
-                <div class="bar fill" style="width: 70%"><span></span>
+                <div class="bar fill" style="width: 50%">
                   <div class="tag bold flex">Angular</div>
                 </div>
-                <span>70%</span>
+                <span>50%</span>
               </div>
 
               <div class="bar flex">
-                <div class="bar fill" style="width: 65%"><span></span>
+                <div class="bar fill" style="width: 65%">
                   <div class="tag bold flex">Node.js</div>
                 </div>
                 <span>65%</span>
               </div>
 
+              <!-- <div class="bar flex">
+                    <div class="bar fill" style="width:65%">
+                      <div class="tag bold flex">Ruby/Rails</div>
+                    </div>
+                    <span>65%</span>
+                  </div> -->
+
               <div class="bar flex">
-                <div class="bar fill" style="width: 50%"><span></span>
+                <div class="bar fill" style="width: 50%">
                   <div class="tag bold flex">UI Design</div>
                 </div>
                 <span>50%</span>
               </div>
+
+              <!-- <div class="bar flex">
+                    <div class="bar fill" style="width:60%">
+                      <div class="tag bold flex">Photoshop</div>
+                    </div>
+                    <span>60%</span>
+                  </div> -->
+
+              <!-- <div class="bar flex">
+                    <div class="bar fill" style="width:50%">
+                      <div class="tag bold flex">Sketch</div>
+                    </div>
+                    <span>50%</span>
+                  </div> -->
             </div>
           </div>
         </div>
       </section>
-      <section id="skills">
-        <div class="flex container">
-          <h2 class="numbered-heading waypoint" data-animation="slide-in-right">SKILLS</h2>
-        </div>
-      </section>
 
-      <!-- PROJECTS -->
-      <section id="portfolio">
-        <div class="flex container">
-          <h2 class="numbered-heading waypoint" data-animation="slide-in-right">PROJECTS</h2>
-          <!-- <div class="header waypoint" data-animation="slide-in-right">
-            PROJECTS
-          </div> -->
-          <!-- <div
-            class="header-bar waypoint"
-            data-animation="slide-in-right"
-            data-delay=".3s"
-          ></div> -->
-  
-          <div class="filter-wrap waypoint" data-animation="fade-in">
+      <!-- PORTFOLIO -->
+      <section class="flex" id="portfolio">
+        <div class="header waypoint" data-animation="slide-in-right">
+          PROJECTS
+        </div>
+        <div
+          class="header-bar waypoint"
+          data-animation="slide-in-right"
+          data-delay=".3s"
+        ></div>
+
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".rails">RUBY/RAILS</div>
+            <div class="filter" data-filter=".react">REACT-JS</div>
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          </div>
+          <div class="float-bar">
             <div class="flex row">
               <div class="filter" data-filter="all">ALL</div>
-              <!-- <div class="filter" data-filter=".rails">RUBY/RAILS</div> -->
+              <div class="filter" data-filter=".rails">RUBY/RAILS</div>
               <div class="filter" data-filter=".react">REACT-JS</div>
               <div class="filter" data-filter=".js">JAVASCRIPT</div>
             </div>
-            <div class="float-bar">
-              <div class="flex row">
-                <div class="filter" data-filter="all">ALL</div>
-                <!-- <div class="filter" data-filter=".rails">RUBY/RAILS</div> -->
-                <div class="filter" data-filter=".react">REACT-JS</div>
-                <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          </div>
+        </div>
+
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix react" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">ChowNow Ordering</div>
+                <span class="highlight">React JS / Python</span>
               </div>
+              <div class="button" id="ordering">LEARN MORE</div>
             </div>
           </div>
-  
-          <div id="gallery" class="container flex row wrap waypoint">
-            <div class="mix react" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">ChowNow Ordering</div>
-                  <span class="highlight">React JS / Python</span>
-                </div>
-                <div class="button" id="ordering">LEARN MORE</div>
+
+          <div class="mix react" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">ChowNow Discover</div>
+                <span class="highlight">React JS / Python</span>
               </div>
+              <div class="button" id="discover">LEARN MORE</div>
             </div>
-  
-            <div class="mix react" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">ChowNow Discover</div>
-                  <span class="highlight">React JS / Python</span>
-                </div>
-                <div class="button" id="discover">LEARN MORE</div>
+          </div>
+
+          <div class="mix react" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">New Relic</div>
+                <span class="highlight">React / Ruby on Rails / AEM</span>
               </div>
+              <div class="button" id="newrelic">LEARN MORE</div>
             </div>
-  
-            <div class="mix react" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">New Relic</div>
-                  <span class="highlight">React / Ruby on Rails / AEM</span>
-                </div>
-                <div class="button" id="newrelic">LEARN MORE</div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Roambi</div>
+                <span class="highlight">JavaScript</span>
               </div>
+              <div class="button" id="roambi">LEARN MORE</div>
             </div>
-  
-            <div class="mix js" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Roambi</div>
-                  <span class="highlight">JavaScript</span>
-                </div>
-                <div class="button" id="roambi">LEARN MORE</div>
+          </div>
+
+          <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Walker Tracker</div>
+                <span class="highlight">JS / Ruby on Rails</span>
               </div>
+              <div class="button" id="walker">LEARN MORE</div>
             </div>
-  
-            <div class="mix rails" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Walker Tracker</div>
-                  <span class="highlight">JS / Ruby on Rails</span>
-                </div>
-                <div class="button" id="walker">LEARN MORE</div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">MY STAND</div>
+                <span class="highlight">JS / Node.js on Sails</span>
               </div>
+              <div class="button" id="mystand">LEARN MORE</div>
             </div>
-  
-            <div class="mix js" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">MY STAND</div>
-                  <span class="highlight">JS / Node.js on Sails</span>
-                </div>
-                <div class="button" id="mystand">LEARN MORE</div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">NEVER SURRENDER</div>
+                <span class="highlight">JavaScript</span>
               </div>
+              <div class="button" id="never">LEARN MORE</div>
             </div>
-  
-            <div class="mix js" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">NEVER SURRENDER</div>
-                  <span class="highlight">JavaScript</span>
-                </div>
-                <div class="button" id="never">LEARN MORE</div>
+          </div>
+
+          <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Powur</div>
+                <span class="highlight">Angular / Ruby on Rails</span>
               </div>
+              <div class="button" id="powur">LEARN MORE</div>
             </div>
-  
-            <div class="mix rails" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">Powur</div>
-                  <span class="highlight">Angular / Ruby on Rails</span>
-                </div>
-                <div class="button" id="powur">LEARN MORE</div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">The Mall</div>
+                <span class="highlight">React.js / Node</span>
               </div>
-            </div>
-  
-            <div class="mix js" data-my-order="1">
-              <div>
-                <div class="card"></div>
-                <div class="text">
-                  <div class="bold">The Mall</div>
-                  <span class="highlight">React.js / Node</span>
-                </div>
-                <div class="button" id="themall">LEARN MORE</div>
-              </div>
+              <div class="button" id="themall">LEARN MORE</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- BLOG -->
-      <!-- <section id="blog">
- 
-      </section> -->
+
 
       <!-- CONTACT -->
       <section id="contact">
-        <!-- <svg
+        <svg
           preserveAspectRatio="none"
           viewBox="0 0 100 102"
           height="75"
@@ -378,9 +423,8 @@
           class="svgcolor-light"
         >
           <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
-        </svg> -->
+        </svg>
         <div class="container flex">
-          <h2 class="numbered-heading waypoint" data-animation="slide-in-right">CONTACT</h2>
           <div class="header waypoint" data-animation="slide-in-left">
             CONTACT
           </div>
@@ -433,22 +477,22 @@
         <i class="fas fa-pencil-alt mdi mdi-chevron-double-up page-link" dest="home">
     </i>
         <div class="icon-wrap flex row">
-          <a href="">
+          <a href="https://www.linkedin.com/in/mattwilliams85">
             <div class="flex icon" id="icon-2">
               <i class="mdi mdi-linkedin"></i>
             </div>
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/matthew.williams.351">
             <div class="flex icon" id="icon-3">
               <i class="mdi mdi-facebook"></i>
             </div>
           </a>
-          <a href="">
+          <a href="https://instagram.com/infinite_edge/">
             <div class="flex icon" id="icon-4">
               <i class="mdi mdi-instagram"></i>
             </div>
           </a>
-          <a href="">
+          <a href="http://codepen.io/matthewwilliams/">
             <div class="flex icon" id="icon-5">
               <i class="mdi mdi-codepen"></i>
             </div>
@@ -505,10 +549,5 @@
     </div>
 
     <script src="scripts/canvas.js"></script>
-    <script>
-      // function myFunction(x) {
-      //   x.classList.toggle("change");
-      // }
-    </script>
   </body>
 </html>

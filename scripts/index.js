@@ -53,12 +53,12 @@ $(function() {
       if (pos2 > $('#about').offset().top) {
         highlightLink('about');
       }
-      if (pos2 > $('#skills').offset().top) {
-        highlightLink('skills');
-      }
       if (pos2 > $('#portfolio').offset().top) {
         highlightLink('portfolio');
       }
+      // if (pos2 > $('#blog').offset().top) {
+      //   highlightLink('blog');
+      // }
       if (
         pos2 > $('#contact').offset().top ||
         pos + $(window).height() === $(document).height()
@@ -88,8 +88,6 @@ $(function() {
     $('.page-link').click(function() {
       var anchor = $(this).attr('dest');
       $('.link-wrap').removeClass('visible');
-      $(".mdi-menu").removeClass("close-btn");
-
   
       $('nav span').removeClass('active');
       $('nav')
@@ -103,16 +101,10 @@ $(function() {
         400
       );
     });
-
-    $('.mdi-menu').click(function() {
-      $(".mdi-menu").toggleClass("close-btn");
-      $(".link-wrap").toggleClass("visible");
-      // $("nav").toggleClass(".link-wrap")
-    })
   
-    // $('.mdi-menu').click(function() {
-    //   $('.link-wrap').toggleClass('visible');
-    // });
+    $('.mdi-menu').click(function() {
+      $('.link-wrap').toggleClass('visible');
+    });
   
     $('.blog-wrap').hover(
       function() {
@@ -167,7 +159,7 @@ $(function() {
           '-moz-animation-delay': animationDelay,
           'animation-delay': animationDelay
         });
-
+  
         var trigger = elemTrigger ? trigger : elem;
   
         trigger.waypoint(
